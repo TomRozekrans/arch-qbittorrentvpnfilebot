@@ -42,7 +42,8 @@ fi
 ####
 
 # define aur packages
-aur_packages=""
+su nobody -c "gpg --keyserver https://get.filebot.net/filebot/KEYS --recv-keys B0976E51E5C047AD0FD051294E402EBF7C3C6A71"
+aur_packages="filebot"
 
 # call aur install script (arch user repo) - note true required due to autodl-irssi error during install
 source aur.sh
